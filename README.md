@@ -12,7 +12,7 @@ This comes from the June 26, 2025, issue covering the impacts of the (then yet-t
 
 ![viz]()
 
-(c) 2025 The Economist.
+© 2025 The Economist.
 
 ### 1. Data
 
