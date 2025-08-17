@@ -14,7 +14,7 @@ One recent example was featured in the June 26, 2025, issue covering the impacts
 -   The tiles are labeled by postal abbreviations, making it easy to navigate and make comparisons between states. The labels use appropriate alternating contrasting type color for darker fill (and thus higher percentages).
 -   The separate guide legend for `0` values, which could be easily adapted for `NA` values.
 
-![](02_images/economist_choropleth.png){fig-align="center"}
+![](02_images/economist_choropleth.png)
 
 © 2025 The Economist.
 
@@ -24,10 +24,9 @@ The article draws on data from the [The Hilltop Institute's](https://hilltopinst
 
 ### 2. Recreating the Visualization in {ggplot2}
 
-The great {tabulapdf} package made it easy to extracting the data from The Hilltop Institute's report. Although it was (fairly) straightforward to recreate the tile grid, color scheme (using Smart Color Picker), and (generally) the typeface (I *think* Arial Narrow for state names, but not for the title), positioning the scale legends for the "0" values and the guide color bar took some (read a lot of) finessing. The {patchwork} package's `plot_spacer()` function made it possible to approximate the positioning of the original. This approximation can be much improved upon (still using only with the {pathchwork} and {ggplot2} approach).
-The great {tabulapdf} package made it easy to extracting the data from The Hilltop Institute's report. Although it was (fairly) straightforward to recreate the tile grid, color scheme (using Smart Color Picker), and (generally) the typeface (I *think* Arial Narrow for state names, but **not** the title), positioning the scale legends for the "0" values and the guide color bar took some (read a lot of) finessing. The {patchwork} package's `plot_spacer()` function made it possible to approximate the location of the original.
+The great {tabulapdf} package made it easy to extracting the data from The Hilltop Institute's report. Although it was (fairly) straightforward to recreate the tile grid, color scheme (using Smart Color Picker), and (generally) the typeface (I *think* Arial Narrow for state names, but not for the title), positioning the scale legends for the "0" values and the guide color bar took some (read a lot of) finessing. The {patchwork} package's `plot_spacer()` function made it possible to approximate the positioning of the original. This approximation can be much improved upon (still using only with the {pathchwork} and {ggplot2} approach). The great {tabulapdf} package made it easy to extracting the data from The Hilltop Institute's report. Although it was (fairly) straightforward to recreate the tile grid, color scheme (using Smart Color Picker), and (generally) the typeface (I *think* Arial Narrow for state names, but **not** the title), positioning the scale legends for the "0" values and the guide color bar took some (read a lot of) finessing. The {patchwork} package's `plot_spacer()` function made it possible to approximate the location of the original.
 
-![](02_images/economist_choropleth_ggplot.png)
+![](02_images/economist_choropleth_ggplot.png){width="600"}
 
 ### 3. Finessing Final Size
 
